@@ -1,0 +1,7 @@
+@mixin bgImg {
+    background: {
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    };
+}

@@ -1,0 +1,15 @@
+.text {
+    &-center { text-align: center; }
+    &-left { text-align: left; }
+    &-right { text-align: right; }
+
+    &-underline { text-decoration: underline; }
+    &-dashed { text-decoration: dashed; }
+    &-dotted { text-decoration: dotted; }
+    
+    &-lowercase { text-transform: lowercase; }
+    &-uppercase { text-transform: uppercase; }
+
+    &-nowrap { text-wrap: nowrap;}
+    &-wrap { text-wrap: wrap;}
+}

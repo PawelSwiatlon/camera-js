@@ -1,0 +1,60 @@
+@for $i from 1 through 20 {
+    .mb,
+    .pb { 
+        &-#{$i} {
+            margin-bottom: $i + px;
+        }
+    }
+    
+    .mt
+    .pt { 
+        &-#{$i} {
+            margin-top: $i + px;
+        }
+    }
+    
+    .ml,
+    .pl { 
+        &-#{$i} {
+            margin-left: $i + px;
+        }
+    }
+    
+    .mr,
+    .pr {
+        &-#{$i} {
+            margin-right: $i + px;
+        }
+    }
+}
+@for $j from 21 through 100 {
+    @if($j % 5 == 0) {
+        .mb,
+        .pb { 
+            &-#{$j} {
+                margin-bottom: $j + px;
+            }
+        }
+
+        .mt
+        .pt { 
+            &-#{$j} {
+                margin-top: $j + px;
+            }
+        }
+
+        .ml,
+        .pl { 
+            &-#{$j} {
+                margin-left: $j + px;
+            }
+        }
+
+        .mr,
+        .pr {
+            &-#{$j} {
+                margin-right: $j + px;
+            }
+        }
+    }
+}

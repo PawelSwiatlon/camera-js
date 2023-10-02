@@ -1,0 +1,7 @@
+@for $i from 8 through 24 {
+    .font-size {
+        &-#{$i} {
+            @include fontXD($i, 500, $i + ($i*0.15));
+        }
+    }
+}

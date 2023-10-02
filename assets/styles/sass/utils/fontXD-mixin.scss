@@ -1,0 +1,39 @@
+// Sass variable: math
+@use "sass:math";
+// Mixin named fontXD, values ( font-size , font-weight, letter-spacing, line-height
+@mixin fontXD($size, $weight: '', $lineHeight: '', $letterSpace: '') {
+    // Font size value / html basic-font size ( 16 px ) + rem 
+    @if($size == 'inherit'){
+        font-size: inherit;
+    }
+    @if($size != '' & $size != 'inherit'){
+        font-size:  math.div($size, 16) + rem;
+    }
+    // Font weight 
+    @if($weight != ''){
+        @if($weight == 'thin')              { font-weight: 100; } 
+        @else if($weight == 'extra-light')  { font-weight: 200; }
+        @else if($weight == 'light')        { font-weight: 300; }
+        @else if($weight == 'regular')      { font-weight: 400; } 
+        @else if($weight == 'medium')       { font-weight: 500; } 
+        @else if($weight == 'semi-bold')    { font-weight: 600; } 
+        @else if($weight == 'bold')         { font-weight: 700; } 
+        @else if($weight == 'extra-bold')   { font-weight: 800; } 
+        @else if($weight == 'black')        { font-weight: 900; } 
+        @else                               { font-weight: $weight; }
+    }
+    // Font letter spacing from adobe XD to css ( [adobe XD font letter spcing value / 1000] * 1 px)
+    @if($letterSpace != ''){
+        letter-spacing: math.div($letterSpace, 100) * 1px;
+    } @else {
+        letter-spacing: 0.2px;
+    }
+
+    // Font line Height
+    @if($lineHeight == ''){
+        line-height: inherit;
+    }
+    @if($lineHeight != ''){
+        line-height: calc(($lineHeight / $baseFontSize) * 1rem);
+    }
+}

@@ -1,0 +1,24 @@
+.btn {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    display: block;
+
+    &:not(.circle):not(.link) {
+
+
+    }
+
+    &.link {
+        display: inline;
+    }
+
+    &.circle {
+        border-radius: 100%;
+    }
+    
+    &:disabled {
+        
+    }
+}

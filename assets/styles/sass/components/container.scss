@@ -1,0 +1,21 @@
+$basePadding: 15;
+
+.container {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 rem($basePadding);
+
+    &-full {
+        max-width: 1920px;
+    }
+    &-large {
+        max-width: calc(1640px + ($basePadding * 1px));
+    }
+    &-medium {
+        max-width: calc(1088px + ($basePadding * 1px));
+    }
+    &-small {
+        max-width: calc(812px + ($basePadding * 1px));
+    }
+}

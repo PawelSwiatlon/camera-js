@@ -1,0 +1,28 @@
+.color {
+    &-black {
+        color: $black;
+    }   
+    &-white {
+        color: $white;
+    }
+    &-warning {
+        color: $warning;
+    }
+    &-cyan {
+        color: $cyan;
+    }
+}
+.bg-color {
+    &-black {
+        background-color: $black;
+    }
+    &-white {
+        background-color: $white;
+    }
+    &-warning {
+        background-color: $warning;
+    }
+    &-cyan {
+        background-color: $cyan;
+    }
+}

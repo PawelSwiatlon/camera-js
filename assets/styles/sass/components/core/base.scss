@@ -1,0 +1,70 @@
+.w {
+    &-100vw { width: 100vw; }
+    &-50vw { width: 50vw; }
+    &-25vw { width: 25vw; }
+    &-auto { width: auto; }
+    &-100 { width: 100%; }
+    &-75 { width: 75%; }
+    &-50 { width: 50%; }
+    &-33 { width: 33%; }
+    &-25 { width: 25%; }
+    &-10 { width: 10%; }
+}
+.h {
+    &-100vh { height: 100vh; }
+    &-50vh { height: 50vh; }
+    &-25vh { height: 25vh; }
+    &-auto { height: auto; }
+    &-100 { height: 100%; }
+    &-75 { height: 75%; }
+    &-50 { height: 50%; }
+    &-33 { height: 33%; }
+    &-25 { height: 25%; }
+    &-10 { height: 10%; }
+}
+.font-weight {
+    &-300 { font-weight: 300; }
+    &-400 { font-weight: 400; }
+    &-500 { font-weight: 500; }
+    &-600 { font-weight: 600; }
+    &-700 { font-weight: 700; }
+    &-900 { font-weight: 900; }
+}
+.text-doted {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &-line {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // add to element class .text-doted-clamp-x to work with this class
+    }
+
+    &-clamp {
+        &-2 { -webkit-line-clamp: 2; }
+        &-3 { -webkit-line-clamp: 3; }
+        &-4 { -webkit-line-clamp: 4; }
+        &-5 { -webkit-line-clamp: 5; }
+        &-6 { -webkit-line-clamp: 6; }
+    }
+}
+.overflow {
+    &-hidden { overflow: hidden; }
+    &-scroll { overflow: scroll; }
+    &-visible { overflow: visible; }
+
+    &-x {
+        &-hidden { overflow-x: hidden; }
+        &-scroll { overflow-x: scroll; }
+        &-visible { overflow-x: visible; }
+    }
+
+    &-y {
+        &-hidden { overflow-y: hidden; }
+        &-scroll { overflow-y: scroll; }
+        &-visible { overflow-y: visible; }
+    }
+}

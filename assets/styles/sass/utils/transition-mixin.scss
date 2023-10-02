@@ -1,0 +1,15 @@
+@mixin transition($propertyArray: all, $time: 0.250s, $method: cubic-bezier(0.86, 0, 0.07, 1)){
+    $createFinalProperty: '';
+    @each $property in $propertyArray {  
+        @if($createFinalProperty == '') {
+            $createFinalProperty: $property $time $method;
+        } @else {
+            $createFinalProperty: $createFinalProperty, $property $time $method;
+        }
+    };
+    
+    -webkit-transition: $createFinalProperty;
+    -moz-transition: $createFinalProperty;
+    -o-transition: $createFinalProperty;
+    transition: $createFinalProperty;
+}

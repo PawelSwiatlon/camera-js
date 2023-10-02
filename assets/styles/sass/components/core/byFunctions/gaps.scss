@@ -1,0 +1,14 @@
+.gap {
+    @for $i from 1 through 20 {
+        &-#{$i} {
+            gap: $i + px;
+        }
+    }
+    @for $j from 21 through 100 {
+        @if($j % 5 == 0) {
+            &-#{$j} {
+                gap: $j + px;
+            }
+        }
+    }
+}

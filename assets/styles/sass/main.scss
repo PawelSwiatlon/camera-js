@@ -1,0 +1,37 @@
+// Base
+@import 'base/reset.scss';
+@import 'base/vars.scss';
+@import 'base/base.scss';
+@import 'base/class-from-vars.scss';
+
+// Functions
+@import 'utils/functions.scss';
+
+// Mixin
+@import 'utils/fontXD-mixin.scss';
+@import 'utils/backgroundImg-mixin.scss';
+@import 'utils/transition-mixin.scss';
+
+// Typography ( from Base folder ( [!important] import always after import "fontXD" mixin ))
+@import 'base/typography/h1.scss';
+@import 'base/typography/h2.scss';
+@import 'base/typography/h3.scss';
+@import 'base/typography/h4.scss';
+@import 'base/typography/h5.scss';
+@import 'base/typography/h6.scss';
+@import 'base/typography/p.scss';
+@import 'base/typography/a.scss';
+
+
+// Components
+    // Core
+    @import 'components/core/core.scss';
+
+@import 'components/container.scss';
+@import 'components/btn.scss';
+
+// Layout
+// @import 'layout/';
+
+// Test
+@import 'test/test.scss';
